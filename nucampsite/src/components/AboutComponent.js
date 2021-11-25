@@ -9,9 +9,8 @@ function RenderPartner({partner}) {
                 <Media object={true} src={partner.image} alt="{partner.name}" width="150" />
                 <Media body={true} className="ml-5 mb-4"/>
                     <Media heading={true}>{partner.name}
-                    <Media/>
+                    </Media>
                     {partner.description}
-                </Media>
             </React.Fragment>
         )
     } else {
