@@ -131,8 +131,9 @@ function RenderComments({comments, postComment, campsiteId}) {
                                 </div>
                             </Fade>
                         );
-                    })}
-                </Stagger>
+                    })
+                }
+            </Stagger>
                 <CommentForm campsiteId={campsiteId} postComment={postComment} />
             </div>
         )
