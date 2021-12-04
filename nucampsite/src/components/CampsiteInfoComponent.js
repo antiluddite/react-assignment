@@ -32,6 +32,7 @@ class CommentForm extends Component {
         });
     }
 
+
     handleSubmit(values) {
         this.toggleModal();
         this.props.postComment(this.props.campsiteId, values.rating, values.author, values.text);
@@ -59,7 +60,6 @@ class CommentForm extends Component {
                                         <option>4</option>
                                         <option>5</option>
                                     </Control.select>
-
                             </div>
                             <div className="form-group">
                                 <label htmlFor="author">Your Name</label>
@@ -131,9 +131,9 @@ function RenderComments({comments, postComment, campsiteId}) {
                                 </div>
                             </Fade>
                         );
-                {/* <CommentForm campsiteId={campsiteId} postComment={postComment} /> */}
                     })}
                 </Stagger>
+                <CommentForm campsiteId={campsiteId} postComment={postComment} />
             </div>
         )
     }
